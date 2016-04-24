@@ -1,0 +1,48 @@
+h1 {text-align: center; font-size: 175%}
+
+* {
+	box-sizing: border-box;
+}
+
+section {
+	background-color: #AAAAAA;
+	position: relative; 
+	border-style: solid;
+	margin:10px;
+	border-width:1px;
+}
+
+.Title {
+	font-weight: bold;
+	font-size: 125%;
+	float:right;
+	top:-2px;
+	width:100px;
+	text-align: center; 
+	border-style: solid;
+	border-width:1px;
+	border-color:black;
+}
+
+.Content {clear:right;padding:10px;}
+.Type1 .Title {background-color: #FFAAAA;}
+.Type2 .Title {background-color: #FF0000; color:white;}
+.Type3 .Title {background-color: #EEEEAA;}
+
+@media (min-width: 992px) {
+	.Type1 {width:31%;float:left;}
+	.Type2 {width:31%;float:left;}
+	.Type3 {width:31%;float:left;}
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+	.Type1 {width:47%;float:left;}
+	.Type2 {width:47%;float:left;}
+	.Type3 {width:96.5%;float:left;}
+}
+
+@media (max-width: 767px){
+	.Type1 {width:95%;float:left;}
+	.Type2 {width:95%;float:left;}
+	.Type3 {width:95%;float:left;}
+}
